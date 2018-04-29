@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.FXMLDocumentController">
+    <children>
+      <AnchorPane layoutX="105.0" prefHeight="479.0" prefWidth="363.0" style="-fx-background-color: #1A33D5;">
+         <children>
+            <Text fill="WHITE" layoutX="80.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crimechain">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="29.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="116.0" fitWidth="147.0" layoutX="104.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icon.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <JFXButton defaultButton="true" layoutY="152.0" prefHeight="39.0" prefWidth="109.0" ripplerFill="#6677e3" text="SignIn" />
+      <AnchorPane layoutX="480.0" layoutY="10.0" prefHeight="469.0" prefWidth="332.0" />
+      <AnchorPane layoutX="470.0" prefHeight="469.0" prefWidth="332.0" style="-fx-background-color: #FFF;">
+         <children>
+            <JFXTextField fx:id="txtUsername" layoutX="33.0" layoutY="120.0" prefHeight="39.0" prefWidth="275.0" promptText="username" />
+            <JFXPasswordField fx:id="txtPassword" layoutX="33.0" layoutY="199.0" prefHeight="39.0" prefWidth="275.0" promptText="password" />
+            <JFXButton fx:id="btnSignIn" layoutX="135.0" layoutY="288.0" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="66.0" text="SigIn" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
